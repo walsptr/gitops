@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
     namespace: argocd
   source:
-    repoURL: REPLACE_ME_GITOPS_REPO_URL
+    repoURL: https://github.com/walsptr/gitops.git
     targetRevision: main
     path: argocd/apps/dev
     directory:

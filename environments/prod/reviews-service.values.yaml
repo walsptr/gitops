@@ -1,5 +1,5 @@
 image:
-  repository: your-registry/reviews-service
+  repository: sywlsptr/reviews-service
   tag: prod
 
 db:
