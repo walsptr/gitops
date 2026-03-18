@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bookslib-prod-reviews-service
+  namespace: argocd
+spec:
+  project: bookslib
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: bookslib-prod
+  sources:
+    - repoURL: REPLACE_ME_CHART_REPO_URL
+      targetRevision: main
+      path: helm/reviews-service
+      helm:
+        valueFiles:
+          - $values/environments/prod/reviews-service.values.yaml
+    - repoURL: REPLACE_ME_GITOPS_REPO_URL
+      targetRevision: main
+      ref: values
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true

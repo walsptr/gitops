@@ -1,0 +1,3 @@
+image:
+  repository: your-registry/bookslib-frontend
+  tag: dev

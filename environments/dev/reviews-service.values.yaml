@@ -1,0 +1,13 @@
+image:
+  repository: your-registry/reviews-service
+  tag: dev
+
+db:
+  name: reviews_db
+  user: user
+  host: 192.168.113.52
+
+secrets:
+  existingSecretName: reviews-service-secrets
+  keys:
+    dbPassword: DB_PASSWORD

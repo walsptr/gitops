@@ -1,0 +1,8 @@
+image:
+  repository: your-registry/auth-service
+  tag: dev
+
+secrets:
+  existingSecretName: auth-service-secrets
+  keys:
+    dbDsn: DB_DSN

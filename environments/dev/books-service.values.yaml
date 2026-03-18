@@ -1,0 +1,8 @@
+image:
+  repository: your-registry/books-service
+  tag: dev
+
+secrets:
+  existingSecretName: books-service-secrets
+  keys:
+    connectionString: ConnectionStrings__DefaultConnection

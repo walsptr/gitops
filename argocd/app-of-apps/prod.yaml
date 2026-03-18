@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bookslib-prod
+  namespace: argocd
+spec:
+  project: bookslib
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  source:
+    repoURL: REPLACE_ME_GITOPS_REPO_URL
+    targetRevision: main
+    path: argocd/apps/prod
+    directory:
+      recurse: true
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true

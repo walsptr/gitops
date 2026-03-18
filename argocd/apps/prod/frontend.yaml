@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: bookslib-prod-frontend
+  namespace: argocd
+spec:
+  project: bookslib
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: bookslib-prod
+  sources:
+    - repoURL: REPLACE_ME_CHART_REPO_URL
+      targetRevision: main
+      path: helm/frontend
+      helm:
+        valueFiles:
+          - $values/environments/prod/frontend.values.yaml
+    - repoURL: REPLACE_ME_GITOPS_REPO_URL
+      targetRevision: main
+      ref: values
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
