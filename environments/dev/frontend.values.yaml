@@ -1,4 +1,4 @@
 image:
   repository: sywlsptr/bookslib-frontend
-  tag: 11af732
+  tag: f9378fe
 fullnameOverride: frontend
