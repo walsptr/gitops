@@ -1,12 +1,10 @@
 image:
   repository: sywlsptr/reviews-service
-  tag: dev
-
+  tag: 01fff3e
 db:
   name: reviews_db
   user: user
   host: 192.168.113.52
-
 secrets:
   existingSecretName: reviews-service-secrets
   keys:

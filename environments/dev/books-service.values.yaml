@@ -1,7 +1,6 @@
 image:
   repository: sywlsptr/books-service
-  tag: dev
-
+  tag: 01fff3e
 secrets:
   existingSecretName: books-service-secrets
   keys:
