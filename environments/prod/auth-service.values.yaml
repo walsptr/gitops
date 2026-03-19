@@ -2,6 +2,8 @@ image:
   repository: sywlsptr/auth-service
   tag: prod
 
+fullnameOverride: auth-service
+
 secrets:
   existingSecretName: auth-service-secrets
   keys:

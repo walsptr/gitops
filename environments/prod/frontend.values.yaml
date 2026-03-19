@@ -1,3 +1,5 @@
 image:
   repository: sywlsptr/bookslib-frontend
   tag: prod
+
+fullnameOverride: frontend

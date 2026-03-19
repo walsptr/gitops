@@ -2,6 +2,8 @@ image:
   repository: sywlsptr/reviews-service
   tag: prod
 
+fullnameOverride: reviews-service
+
 db:
   name: reviews_db
   user: user

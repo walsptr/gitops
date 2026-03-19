@@ -2,6 +2,8 @@ image:
   repository: sywlsptr/books-service
   tag: prod
 
+fullnameOverride: books-service
+
 secrets:
   existingSecretName: books-service-secrets
   keys:
