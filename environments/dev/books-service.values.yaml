@@ -1,8 +1,7 @@
 image:
   repository: sywlsptr/books-service
-  tag: 01fff3e
+  tag: 11af732
 fullnameOverride: books-service
-
 secrets:
   existingSecretName: books-service-secrets
   keys:

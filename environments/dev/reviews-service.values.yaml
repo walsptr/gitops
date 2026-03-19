@@ -1,8 +1,7 @@
 image:
   repository: sywlsptr/reviews-service
-  tag: 01fff3e
+  tag: 11af732
 fullnameOverride: reviews-service
-
 db:
   name: reviews_db
   user: user
