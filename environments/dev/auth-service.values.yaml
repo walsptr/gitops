@@ -1,6 +1,6 @@
 image:
   repository: sywlsptr/auth-service
-  tag: 095b99c
+  tag: 9de8fd0
 fullnameOverride: auth-service
 secrets:
   existingSecretName: auth-service-secrets
