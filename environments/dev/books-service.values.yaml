@@ -1,6 +1,6 @@
 image:
   repository: sywlsptr/books-service
-  tag: f9378fe
+  tag: 095b99c
 fullnameOverride: books-service
 secrets:
   existingSecretName: books-service-secrets
