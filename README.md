@@ -104,10 +104,6 @@ Pastikan DNS/hosts kamu mengarah ke IP Gateway (LoadBalancer/NodePort sesuai set
 4) Buat PR `promote/<tag>` → `main` di repo GitOps
 5) Setelah PR di-merge, Argo CD deploy prod (manual/auto sesuai `syncPolicy` application prod)
 
-### Main (tag `latest`, tanpa GitOps)
-
-Branch `main` di repo aplikasi dipakai untuk publish image `:latest` agar orang yang mau mencoba bisa install via Helm chart saja (tanpa flow GitOps). Repo GitOps tidak perlu menambah environment khusus untuk `main`.
-
 ## Troubleshooting singkat
 
 - HTTPRoute healthy tapi akses 404:
